@@ -26,7 +26,11 @@ body
     margin: 0;
 }
 /* VEGETABLES */
-.vegetables {
+.vegetables
+{
+    background-color: var(--maincolor);
+}
+.vegetables-one {
     background-color: var(--maincolor);
     width: 1280px;
     height: 1229px;
@@ -35,6 +39,8 @@ body
     padding: 100px 0 0 100px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .vegetables-block {
@@ -135,7 +141,7 @@ body
 
 /* TABLET WEBSITE*/
 @media (min-width:375px) and (max-width:768px){
-    .vegetables {
+    .vegetables-one {
         width: 768px;
         height: auto;
         padding: 100px 0 100px 32px;
@@ -172,8 +178,8 @@ body
 }
 
 /* MOBİLE WEBSITE*/
-@media (min-width:320px) and (max-width: 375px) {
-    .vegetables {
+@media (min-width:0px) and (max-width: 375px) {
+    .vegetables-one {
         width: 375px;
         height: 2766px;
         padding: 80px 20px 80px 20px;
